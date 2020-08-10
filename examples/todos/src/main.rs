@@ -6,7 +6,10 @@ use iced::{
 use serde::{Deserialize, Serialize};
 
 pub fn main() {
-    Todos::run(Settings::default())
+    Todos::run(Settings {
+        default_font: Some(include_bytes!("../fonts/NotoSansCJK-Regular.ttc")),
+        ..Settings::default()
+    })
 }
 
 #[derive(Debug)]
