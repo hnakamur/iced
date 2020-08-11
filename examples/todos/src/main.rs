@@ -7,7 +7,7 @@ use serde::{Deserialize, Serialize};
 
 pub fn main() {
     Todos::run(Settings {
-        default_font: Some(include_bytes!("../fonts/NotoSansCJK-Regular.ttc")),
+        default_font: Some(include_bytes!("../fonts/NotoSansCJKjp-Regular.otf")),
         ..Settings::default()
     })
 }
